@@ -10,9 +10,9 @@
 ## Install The Add-on
 
 1. Copy `addon_installer/` into `system/user/addons/`.
-2. Open ExpressionEngine Developer > Add-Ons.
-3. Install Addon Manager +.
-4. Open Addon Manager + from the add-on settings page.
+2. Open ExpressionEngine **Developer > Add-Ons**.
+3. Find **Addon Manager +** and click **Install**.
+4. Click **Settings** next to Addon Manager + to open it.
 
 ## Verify Setup
 

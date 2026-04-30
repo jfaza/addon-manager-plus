@@ -111,7 +111,19 @@ Loose add-on files at the ZIP root are rejected because the installer cannot inf
 
 ## Screenshots
 
-> Screenshots coming soon. Planned: upload ZIP screen, package cards, and the update / install / settings actions.
+### Install ZIP
+
+![Install ZIP screen](docs/screenshots/upload-zip.png)
+
+*Upload screen showing ZIP Support, Add-ons Folder, and Maximum ZIP Size status cards, the file picker, and the overwrite option.*
+
+### Packages
+
+> Coming soon: package cards screen.
+
+### Actions
+
+> Coming soon: update / install / settings actions.
 
 ## Roadmap
 
