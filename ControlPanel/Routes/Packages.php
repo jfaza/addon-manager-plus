@@ -1,0 +1,65 @@
+<?php
+
+namespace JavidFazaeli\AddonInstaller\ControlPanel\Routes;
+
+use ExpressionEngine\Service\Addon\Controllers\Mcp\AbstractRoute;
+
+class Packages extends AbstractRoute
+{
+    use LoadsStyle;
+
+    /**
+     * @var string
+     */
+    protected $route_path = 'packages';
+
+    /**
+     * @var string
+     */
+    protected $cp_page_title = 'Packages';
+
+    /**
+     * @param false $id
+     * @return AbstractRoute
+     */
+    public function process($id = false)
+    {
+        $this->addBreadcrumb('index', 'Addon Installer');
+        $this->addBreadcrumb('packages', 'Packages');
+        $this->loadStyle();
+
+        $installer = ee('addon_installer:packageInstaller');
+        $download = (string) ee()->input->get('download', true);
+
+        if ($download !== '') {
+            $this->downloadPackage($installer, $download);
+        }
+
+        $this->setBody('Packages', [
+            'packages' => $installer->installedPackages(),
+            'upload_url' => ee('CP/URL')->make('addons/settings/addon_installer/index')->compile(),
+            'docs_url' => ee('CP/URL')->make('addons/settings/addon_installer/documentation')->compile(),
+            'manager_url' => ee('CP/URL')->make('addons')->compile(),
+            'csrf_token' => $installer->csrfToken(),
+        ]);
+
+        return $this;
+    }
+
+    private function downloadPackage($installer, string $shortName): void
+    {
+        $path = $installer->createPackageZip($shortName);
+        $filename = preg_replace('/[^a-z0-9_]/', '_', strtolower(basename($shortName))) . '.zip';
+
+        ee()->output->enable_profiler(false);
+
+        header('Content-Type: application/zip');
+        header('Content-Disposition: attachment; filename="' . $filename . '"');
+        header('Content-Length: ' . filesize($path));
+        header('X-Content-Type-Options: nosniff');
+
+        readfile($path);
+        @unlink($path);
+        exit;
+    }
+}

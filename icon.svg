@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Addon Installer</title>
+  <rect x="2" y="2" width="46" height="46" rx="10" fill="#172033"/>
+  <path d="M14 15.5c0-1.4 1.1-2.5 2.5-2.5h17c1.4 0 2.5 1.1 2.5 2.5v19c0 1.4-1.1 2.5-2.5 2.5h-17c-1.4 0-2.5-1.1-2.5-2.5v-19Z" fill="#EEF4EF"/>
+  <path d="M18 17h14v5H18v-5Z" fill="#A9BFA9"/>
+  <path d="M18 25h14M18 30h9" stroke="#172033" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M25 8v13" stroke="#D6E3D5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20.5 16.5 25 21l4.5-4.5" fill="none" stroke="#D6E3D5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32.5 34.5 37 39l4.5-4.5" fill="none" stroke="#A9BFA9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 27v12" stroke="#A9BFA9" stroke-width="3" stroke-linecap="round"/>
+</svg>
