@@ -8,10 +8,6 @@ Version: 1.1.0
 
 ---
 
-## Overview
-
-Addon Manager + is an ExpressionEngine 7 control panel add-on that handles uploading, extracting, and managing third-party add-on ZIP packages — without leaving the EE control panel. Once a package is extracted, it hands install, update, settings, and uninstall actions back to ExpressionEngine's native add-on manager.
-
 ## Why This Exists
 
 The standard ExpressionEngine add-on installation workflow involves:
@@ -35,7 +31,6 @@ Addon Manager + keeps more of this workflow inside the control panel: upload the
 - Generate package downloads on demand without permanently storing ZIP files.
 - Sort not-installed add-ons before installed ones for quick access.
 - Show the Settings action only for add-ons that declare a settings page.
-- Includes a bundled control panel documentation page and add-on icon.
 
 ## Requirements
 
@@ -49,7 +44,7 @@ Addon Manager + keeps more of this workflow inside the control panel: upload the
 1. Copy the `addon_installer/` folder into `system/user/addons/`.
 2. In ExpressionEngine, open **Developer > Add-Ons**.
 3. Find **Addon Manager +** and click **Install**.
-4. Open Addon Manager + from the add-on settings page.
+4. Click **Settings** next to Addon Manager + to open it.
 
 ## Usage
 
@@ -111,23 +106,17 @@ Loose add-on files at the ZIP root are rejected because the installer cannot inf
 ## Known Limitations
 
 - Only ZIP archives are supported; `.tar.gz` and other formats are not.
-- Loose files at the ZIP root (no containing folder) are rejected.
 - Addon Manager + does not publish or fetch packages from a remote registry; all packages must be uploaded manually.
 - The download feature regenerates ZIPs from the current on-disk files, not from the original uploaded archive.
 
 ## Screenshots
 
-> Screenshots coming soon.
-
-![Upload ZIP screen](docs/screenshots/upload-zip.png)
-![Package cards screen](docs/screenshots/package-cards.png)
-![Update available / install / settings actions](docs/screenshots/package-actions.png)
+> Screenshots coming soon. Planned: upload ZIP screen, package cards, and the update / install / settings actions.
 
 ## Roadmap
 
 - Remote package registry / URL install
 - Bulk install from a ZIP containing multiple add-ons
-- License key management per package
 - Improved version conflict UI
 
 ## Changelog / Releases
@@ -155,13 +144,13 @@ for f in *.php ControlPanel/*.php ControlPanel/Routes/*.php Service/*.php views/
 
 ## GitHub Repository Setup
 
-Recommended **GitHub description:**
+> Remove this section after completing repo setup.
+
+Set the GitHub **description** to:
 
 > Install and manage ExpressionEngine add-on ZIP packages directly from the EE 7 control panel.
 
-Recommended **topics:**
-
-`expressionengine` `expressionengine-addon` `ee7` `cms` `php` `addon-manager` `zip-installer` `control-panel` `developer-tools`
+Add these **topics:** `expressionengine` `expressionengine-addon` `ee7` `cms` `php` `addon-manager` `zip-installer` `control-panel` `developer-tools`
 
 ## License
 
