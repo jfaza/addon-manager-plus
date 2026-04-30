@@ -16,7 +16,7 @@ class Index extends AbstractRoute
     /**
      * @var string
      */
-    protected $cp_page_title = 'Addon Installer';
+    protected $cp_page_title = 'Addon Manager +';
 
     /**
      * @param false $id
@@ -24,7 +24,7 @@ class Index extends AbstractRoute
      */
     public function process($id = false)
     {
-        $this->addBreadcrumb('index', 'Addon Installer');
+        $this->addBreadcrumb('index', 'Addon Manager +');
         $this->loadStyle();
 
         $installer = ee('addon_installer:packageInstaller');

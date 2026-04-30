@@ -3,8 +3,8 @@
 use JavidFazaeli\AddonInstaller\Service\PackageInstaller;
 
 return [
-    'name'              => 'Addon Installer',
-    'description'       => 'Install and download ExpressionEngine add-ons from ZIP packages through the control panel.',
+    'name'              => 'Addon Manager +',
+    'description'       => 'Manage ExpressionEngine add-ons from ZIP packages through the control panel.',
     'version'           => '1.1.0',
     'author'            => 'Javid Fazaeli',
     'author_url'        => 'https://fazaeli.dev',

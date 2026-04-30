@@ -24,7 +24,7 @@ class Documentation extends AbstractRoute
      */
     public function process($id = false)
     {
-        $this->addBreadcrumb('index', 'Addon Installer');
+        $this->addBreadcrumb('index', 'Addon Manager +');
         $this->addBreadcrumb('documentation', 'Documentation');
         $this->loadStyle();
 

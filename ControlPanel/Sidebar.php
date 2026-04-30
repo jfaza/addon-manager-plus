@@ -8,7 +8,7 @@ class Sidebar extends AbstractSidebar
 {
     public $automatic = false;
 
-    public $header = 'Addon Installer';
+    public $header = 'Addon Manager +';
 
     private string $base = 'addons/settings/addon_installer/';
 

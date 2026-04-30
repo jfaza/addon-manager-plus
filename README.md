@@ -1,10 +1,10 @@
-# Addon Installer
+# Addon Manager +
 
 Author: Javid Fazaeli
 
 License: MIT
 
-Addon Installer is an ExpressionEngine 7 control panel add-on for managing
+Addon Manager + is an ExpressionEngine 7 control panel add-on for managing
 third-party add-on ZIP packages from inside the control panel. It uploads ZIPs,
 detects the real add-on folder, extracts files into the active add-ons directory,
 and then hands install, update, settings, and uninstall actions back to
@@ -36,8 +36,8 @@ ExpressionEngine's normal add-on manager flow.
 
 1. Copy `addon_installer/` into `system/user/addons/`.
 2. In ExpressionEngine, open Developer > Add-Ons.
-3. Install Addon Installer.
-4. Open Addon Installer from the add-on settings page.
+3. Install Addon Manager +.
+4. Open Addon Manager + from the add-on settings page.
 
 ## Package Format
 
@@ -82,6 +82,8 @@ The Packages screen shows:
 
 ## Development
 
+Additional project documentation lives in [wiki/Home.md](wiki/Home.md).
+
 Run PHP lint after editing PHP files:
 
 ```bash
@@ -93,7 +95,7 @@ add-on repository.
 
 ## Notes
 
-Addon Installer extracts packages and builds convenience links only.
+Addon Manager + extracts packages and builds convenience links only.
 ExpressionEngine remains responsible for final install, update, settings, and
 uninstall behavior.
 
