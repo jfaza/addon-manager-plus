@@ -1,8 +1,11 @@
 AGENTS.md
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+vendor/
+node_modules/
+.env
 *.log
 *.tmp
 *.zip
-vendor/
-node_modules/
