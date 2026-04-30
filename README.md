@@ -2,6 +2,8 @@
 
 Author: Javid Fazaeli
 
+License: MIT
+
 Addon Installer is an ExpressionEngine 7 control panel add-on for managing
 third-party add-on ZIP packages from inside the control panel. It uploads ZIPs,
 detects the real add-on folder, extracts files into the active add-ons directory,
@@ -94,3 +96,7 @@ add-on repository.
 Addon Installer extracts packages and builds convenience links only.
 ExpressionEngine remains responsible for final install, update, settings, and
 uninstall behavior.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
